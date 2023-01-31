@@ -1,0 +1,136 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+   "responses": ["Hello", "Hi", "Hi there"]
+  },
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye"],
+   "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+  },
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+  },
+  {"tag": "about",
+   "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+   "responses": ["I.m REWISDOM AI, your bot assistant", "I'm REWISDOM AI, an Artificial Intelligent bot"]
+  },
+  {"tag": "name",
+  "patterns": ["what is your name", "what should I call you", "whats your name?"],
+  "responses": ["You can call me REWISDOM AI.", "I'm REWISDOM AI!", "Just call me as REWISDOM AI"]
+  },
+  {"tag": "help",
+  "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+  "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+  },
+  {"tag": "thanks",
+  "patterns": ["Thanks", "Thank you", "That's helpful"],
+  "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  },
+  {"tag": "hours",
+  "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+  "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+  },
+  {"tag": "payments",
+  "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+  "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+  },
+  {"tag": "opentoday",
+  "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+  "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+  },
+  {"tag": "today",
+  "patterns": ["today"],
+  "responses": ["For further details for today please call 00000000", " please call 1-800-0000"],
+  "context_filter": "today"
+  },
+  {"tag": "createaccount",
+  "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+  "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+  },
+  {"tag": "noanswer",
+  "patterns": [],
+  "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+  "context": [""]
+  },
+  {"tag": "options",
+  "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+  "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"],
+  "context": [""]
+ },
+ {"tag": "search_person_by_id",
+  "patterns": ["I want an appoitment with Mr. Zubair","set an appointment with CEO"],
+  "responses": ["Fixing an appointment."],
+  "context": [""]
+  },
+  {"tag": "appointment status",
+  "patterns": ["Is my appointment fixed?","Do I have an appointment today?"],
+  "responses": ["Yes","NO! Not Yet"],
+  "context": [""]
+  },
+  {"tag": "noans",
+  "patterns": ["why","how","when","I","you"],
+  "responses": ["Can't Understand Your Question","please elaborate your question"],
+  "context": [""]
+  },
+  {"tag": "noanswer",
+  "patterns": [],
+  "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+  "context": [""]
+  },
+  {"tag": "options",
+  "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+  "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+  "context": [""]
+  },
+  {"tag": "adverse_drug",
+  "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+  "responses": ["Navigating to Adverse drug reaction module"],
+  "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+  {"tag": "complaint",
+  "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+  "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+  }
+]
+}
